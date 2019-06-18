@@ -1,0 +1,166 @@
+var arr=[90,10,5,12,78,100];
+undefined
+arr;
+(6) [90, 10, 5, 12, 78, 100]
+arr.sort((a,b)=>a-b); //Assending Order
+(6) [5, 10, 12, 78, 90, 100]
+arr.sort((a,b)=>b-a); //Desending Order
+(6) [100, 90, 78, 12, 10, 5]
+var names=["ram","rohan","amit","krishn","radha"];
+undefined
+names;
+(5) ["ram", "rohan", "amit", "krishn", "radha"]
+typeof names;
+"object"
+"ram".localeCompare("rohan");
+-1
+"ram".localeCompare("amit");
+1
+"ram".localeCompare("ram");
+0
+arr.sort((a,b)=>a.localCom
+VM503:1 Uncaught SyntaxError: missing ) after argument list
+names;
+(5) ["ram", "rohan", "amit", "krishn", "radha"]
+arr.sort((a,b)=>a.localCompare(a)); //Assending Order
+VM654:1 Uncaught TypeError: a.localCompare is not a function
+    at <anonymous>:1:19
+    at Array.sort (<anonymous>)
+    at <anonymous>:1:5
+(anonymous) @ VM654:1
+(anonymous) @ VM654:1
+names.sort((a,b)=>a.localCompare(a)); //Assending Order
+VM732:1 Uncaught TypeError: a.localCompare is not a function
+    at <anonymous>:1:21
+    at Array.sort (<anonymous>)
+    at <anonymous>:1:7
+(anonymous) @ VM732:1
+(anonymous) @ VM732:1
+names.sort((a,b)=>a.localCompare(b)); //Assending Order
+VM743:1 Uncaught TypeError: a.localCompare is not a function
+    at <anonymous>:1:21
+    at Array.sort (<anonymous>)
+    at <anonymous>:1:7
+(anonymous) @ VM743:1
+(anonymous) @ VM743:1
+names.sort((a,b)=>a.localeCompare(b)); //Assending Order
+(5) ["amit", "krishn", "radha", "ram", "rohan"]
+names.sort((a,b)=>b.localeCompare(a)); //Dessending Order
+(5) ["rohan", "ram", "radha", "krishn", "amit"]
+var prices=[90,44,56,78,65,35];
+undefined
+prices;
+(6) [90, 44, 56, 78, 65, 35]
+typeof prices;
+"object"
+prices instanceof Object;
+true
+//Reduce function
+prices.reduce((acc,ele)=>acc+=ele,acc=0);
+368
+//Reduce function
+prices.reduce((acc,ele)=>{
+if(ele>60){
+acc+=ele
+}
+return acc;
+},acc=0);
+233
+var prices=[90,44,56,78,65,35];
+undefined
+prices.reduce(acc,ele)=>{
+if(ele>60){
+acc.push(ele);
+}
+return acc;
+},acc=[]);
+VM1267:1 Uncaught SyntaxError: Malformed arrow function parameter list
+prices.reduce((acc,ele)=>{
+if(ele>60){
+acc.push(ele);
+}
+return acc;
+},acc=[]);
+(3) [90, 78, 65]
+var obj={};
+undefined
+typeof obj;
+"object"
+obj instanceof object;
+VM1337:1 Uncaught ReferenceError: object is not defined
+    at <anonymous>:1:16
+(anonymous) @ VM1337:1
+obj instanceof Object;
+true
+prices;
+(6) [90, 44, 56, 78, 65, 35]
+typeof prices;
+"object"
+prices instanceof Array;
+true
+var obj={id:1001,name:'rohan',salary:9999};
+undefined
+obj.id;
+1001
+obj.salary;
+9999
+obj.name;
+"rohan"
+typeof obj;
+"object"
+obj instanceof Object;
+true
+var math={
+add(){
+},
+sub{
+}
+}
+VM1650:4 Uncaught SyntaxError: Unexpected token {
+var math={
+add(){
+},
+sub{
+}
+
+}
+VM1653:4 Uncaught SyntaxError: Unexpected token {
+var math={
+add(){
+},
+sub(){
+}
+
+}
+undefined
+math.add();
+undefined
+var obj2={id:1002,name:'krishna',salary;9999};
+VM1757:1 Uncaught SyntaxError: Unexpected token ;
+var obj2={id:1002,name:'krishna',salary:9999};
+undefined
+var cartOperations= {
+add(){
+},
+delete(){
+},
+search(){
+},
+update(){
+}
+}
+undefined
+function Cart(id,name,qt,price){
+}
+undefined
+typeof add;
+"undefined"
+typeof add();
+VM1963:1 Uncaught ReferenceError: add is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1963:1
+typeof cartOperations;
+
+"object"
+typeof Cart;
+"function"
